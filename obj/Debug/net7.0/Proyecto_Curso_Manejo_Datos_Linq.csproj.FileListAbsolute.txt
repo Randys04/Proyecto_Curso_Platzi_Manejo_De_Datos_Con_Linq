@@ -1,0 +1,15 @@
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\bin\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.exe
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\bin\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.deps.json
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\bin\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.runtimeconfig.json
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\bin\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.dll
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\bin\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.pdb
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.csproj.AssemblyReference.cache
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.AssemblyInfoInputs.cache
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.AssemblyInfo.cs
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.csproj.CoreCompileInputs.cache
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.dll
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\refint\Proyecto_Curso_Manejo_Datos_Linq.dll
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.pdb
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\Proyecto_Curso_Manejo_Datos_Linq.genruntimeconfig.cache
+C:\Users\Randy\Desktop\arrow\Platzi_cursos\Curso_Manejo_Datos_LINQ\Proyecto_Curso_Manejo_Datos_Linq\obj\Debug\net7.0\ref\Proyecto_Curso_Manejo_Datos_Linq.dll
