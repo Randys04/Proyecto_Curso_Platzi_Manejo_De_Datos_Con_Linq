@@ -16,5 +16,14 @@ public class LinqQueries
     {
         return booksCollection;
     }
+
+    public IEnumerable<Book> booksAfter2000()
+    {
+        // extension method
+        // return booksCollection.Where(book => book.PublishedDate.Year > 2000);
+
+        // query expresion
+        return from book in booksCollection where book.PublishedDate.Year > 2000 select book;
+    }
 }
 

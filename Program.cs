@@ -3,7 +3,11 @@ Console.WriteLine("Hello, World!");
 
 LinqQueries queries = new LinqQueries();
 
-printValues(queries.allCollection());
+// all collection
+// printValues(queries.allCollection());
+
+// books after 2000
+printValues(queries.booksAfter2000());
 
 void printValues(IEnumerable<Book> booksList)
 {
