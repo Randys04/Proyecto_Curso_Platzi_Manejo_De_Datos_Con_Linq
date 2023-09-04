@@ -42,6 +42,11 @@ public class LinqQueries
         return booksCollection.All(book => book.Status != string.Empty);
     }
 
+    public bool AnyBookWasPublishedIn2005()
+    {
+        return booksCollection.Any(book => book.PublishedDate.Year == 2005);
+    }
+
 
 }
 

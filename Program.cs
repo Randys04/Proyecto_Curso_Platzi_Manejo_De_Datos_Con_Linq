@@ -13,7 +13,11 @@ LinqQueries queries = new LinqQueries();
 //printValues(queries.booksWithMoreThan250PagesAndInActionInTheirTitle());
 
 // verify if all books have a status
-Console.WriteLine(queries.AllBooksHasStatus());
+ Console.WriteLine($"All books have a status? - {queries.AllBooksHasStatus()}");
+
+// verify if any book was published in 2005
+Console.WriteLine($"Any book was published in 2005? - {queries.AnyBookWasPublishedIn2005()}");
+
 void printValues(IEnumerable<Book> booksList)
 {
     Console.WriteLine("{0,-70} {1,7} {2,11}\n", "Title", "Pages", "Published date" );
