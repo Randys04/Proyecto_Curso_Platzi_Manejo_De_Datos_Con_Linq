@@ -25,5 +25,14 @@ public class LinqQueries
         // query expresion
         return from book in booksCollection where book.PublishedDate.Year > 2000 select book;
     }
+
+    public IEnumerable<Book> booksWithMoreThan250PagesAndInActionInTheirTitle()
+    {
+        // extension method
+        // return booksCollection.Where(book => book.PageCount > 249 && book.Title.Contains("in Action"));
+
+        // query expresion
+        return from book in booksCollection where book.PageCount > 250 && book.Title.Contains("in Action") select book;
+    }
 }
 
