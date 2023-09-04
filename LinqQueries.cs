@@ -47,6 +47,15 @@ public class LinqQueries
         return booksCollection.Any(book => book.PublishedDate.Year == 2005);
     }
 
+    public IEnumerable<Book> BooksThatContainsPythonInTheirCategories()
+    {
+        // extension method
+        // return booksCollection.Where(book => book.Categories.Contains("Python"));
+        
+        // query expresion
+        return from book in booksCollection where book.Categories.Contains("Python") select book;
+    }
+
 
 }
 
