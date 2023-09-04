@@ -1,5 +1,7 @@
 ﻿
 
+using System.Reflection.Metadata.Ecma335;
+
 public class LinqQueries
 {
     private List<Book> booksCollection = new List<Book>();
@@ -34,5 +36,12 @@ public class LinqQueries
         // query expresion
         return from book in booksCollection where book.PageCount > 250 && book.Title.Contains("in Action") select book;
     }
+
+    public bool AllBooksHasStatus()
+    {
+        return booksCollection.All(book => book.Status != string.Empty);
+    }
+
+
 }
 

@@ -10,7 +10,10 @@ LinqQueries queries = new LinqQueries();
 //printValues(queries.booksAfter2000());
 
 // books with more than 250 pages and contains the word "in Action" in their title
-printValues(queries.booksWithMoreThan250PagesAndInActionInTheirTitle());
+//printValues(queries.booksWithMoreThan250PagesAndInActionInTheirTitle());
+
+// verify if all books have a status
+Console.WriteLine(queries.AllBooksHasStatus());
 void printValues(IEnumerable<Book> booksList)
 {
     Console.WriteLine("{0,-70} {1,7} {2,11}\n", "Title", "Pages", "Published date" );
