@@ -56,6 +56,11 @@ public class LinqQueries
         return from book in booksCollection where book.Categories.Contains("Python") select book;
     }
 
+    public IEnumerable<Book> JavaBooksByNameAscendant()
+    {
+        return booksCollection.Where(book => book.Categories.Contains("Java")).OrderBy(book => book.Title);
+    } 
+
 
 }
 

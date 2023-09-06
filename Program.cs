@@ -19,7 +19,10 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"Any book was published in 2005? - {queries.AnyBookWasPublishedIn2005()}");
 
 // books with "Python" in their categories
-printValues(queries.BooksThatContainsPythonInTheirCategories());
+// printValues(queries.BooksThatContainsPythonInTheirCategories());
+
+// Java books order by their titles
+printValues(queries.JavaBooksByNameAscendant());
 
 void printValues(IEnumerable<Book> booksList)
 {
