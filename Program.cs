@@ -22,7 +22,10 @@ LinqQueries queries = new LinqQueries();
 // printValues(queries.BooksThatContainsPythonInTheirCategories());
 
 // Java books order by their titles
-printValues(queries.JavaBooksByNameAscendant());
+// printValues(queries.JavaBooksByNameAscendant());
+
+// Books with more than 450 pages sorted in descending order
+printValues(queries.BooksWithMoreThan450PagesSortedinDescendingOrder());
 
 void printValues(IEnumerable<Book> booksList)
 {

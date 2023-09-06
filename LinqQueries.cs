@@ -59,7 +59,12 @@ public class LinqQueries
     public IEnumerable<Book> JavaBooksByNameAscendant()
     {
         return booksCollection.Where(book => book.Categories.Contains("Java")).OrderBy(book => book.Title);
-    } 
+    }
+
+    public IEnumerable<Book> BooksWithMoreThan450PagesSortedinDescendingOrder()
+    {
+        return booksCollection.Where(book => book.PageCount > 450).OrderByDescending(book => book.PageCount);
+    }
 
 
 }
