@@ -66,6 +66,11 @@ public class LinqQueries
         return booksCollection.Where(book => book.PageCount > 450).OrderByDescending(book => book.PageCount);
     }
 
+    public IEnumerable<Book> ThreeMostRecentJavaBooks()
+    {
+        return booksCollection.Where(book => book.Categories.Contains("Java")).OrderByDescending(book => book.PublishedDate).Take(3);
+    }
+
 
 }
 
