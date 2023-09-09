@@ -34,7 +34,11 @@ LinqQueries queries = new LinqQueries();
 // printValues(queries.thirdAndFourthBookWithMoreThan400Pages());
 
 // First three books from collection filter with select
-printValues(queries.firstThreeBooksFromCollection());
+// printValues(queries.firstThreeBooksFromCollection());
+
+// Total number of books with between 200 and 500 pages
+Console.WriteLine($"Total number of books with between 200 and 500 pages: {queries.totalBooksBetween200And500Pages()}");
+
 
 void printValues(IEnumerable<Book> booksList)
 {

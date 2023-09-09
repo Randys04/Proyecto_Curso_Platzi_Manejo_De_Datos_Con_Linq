@@ -81,6 +81,13 @@ public class LinqQueries
         return booksCollection.Take(3).Select(book => new Book() {Title = book.Title, PageCount = book.PageCount });
     }
 
+    public int totalBooksBetween200And500Pages()
+    {
+        // this line can be a bad practice 
+        // return booksCollection.Where(book => book.PageCount >= 200 && book.PageCount <= 500).Count();
+
+        return booksCollection.Count(book => book.PageCount >= 200 && book.PageCount <= 500);
+    }
 
 
 }
