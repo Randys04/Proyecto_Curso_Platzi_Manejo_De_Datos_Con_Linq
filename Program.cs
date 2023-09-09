@@ -28,8 +28,10 @@ LinqQueries queries = new LinqQueries();
 // printValues(queries.BooksWithMoreThan450PagesSortedinDescendingOrder());
 
 // the three most recents java books
-printValues(queries.ThreeMostRecentJavaBooks());
+// printValues(queries.ThreeMostRecentJavaBooks());
 
+// third and fourth book with more than 400 pages
+printValues(queries.thirdAndFourthBookWithMoreThan400Pages());
 
 void printValues(IEnumerable<Book> booksList)
 {
