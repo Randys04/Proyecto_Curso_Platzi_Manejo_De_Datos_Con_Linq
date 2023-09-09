@@ -31,7 +31,10 @@ LinqQueries queries = new LinqQueries();
 // printValues(queries.ThreeMostRecentJavaBooks());
 
 // third and fourth book with more than 400 pages
-printValues(queries.thirdAndFourthBookWithMoreThan400Pages());
+// printValues(queries.thirdAndFourthBookWithMoreThan400Pages());
+
+// First three books from collection filter with select
+printValues(queries.firstThreeBooksFromCollection());
 
 void printValues(IEnumerable<Book> booksList)
 {

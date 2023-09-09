@@ -76,6 +76,12 @@ public class LinqQueries
         return booksCollection.Where(book => book.PageCount > 400).Take(4).Skip(2);
     }
 
+    public IEnumerable<Book> firstThreeBooksFromCollection()
+    {
+        return booksCollection.Take(3).Select(book => new Book() {Title = book.Title, PageCount = book.PageCount });
+    }
+
+
 
 }
 
