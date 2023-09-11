@@ -94,5 +94,10 @@ public class LinqQueries
         return booksCollection.Min(book => book.PublishedDate);
     }
 
+    public int biggestNumberOfPagesOfABook()
+    {
+        return booksCollection.Max(book => book.PageCount);
+    }
+
 }
 
