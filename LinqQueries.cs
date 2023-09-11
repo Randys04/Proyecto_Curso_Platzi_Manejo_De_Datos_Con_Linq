@@ -116,5 +116,23 @@ public class LinqQueries
         return booksCollection.Where(book => book.PageCount >= 0 && book.PageCount <= 500)
             .Sum(book => book.PageCount);
     }
+
+    public string booksTitlesAfter2015()
+    {
+        return booksCollection.Where(book => book.PublishedDate.Year > 2015)
+            .Aggregate("", (Titles, next) =>
+            {
+                if (Titles != string.Empty)
+                {
+                    Titles += " - " + next.Title;
+                }
+                else
+                {
+                    Titles = next.Title;
+                }
+
+                return Titles;
+            });
+    }
 }
 

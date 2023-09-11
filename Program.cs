@@ -54,7 +54,10 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"{recentBook.Title} - {recentBook.PublishedDate} - {recentBook.PageCount}");
 
 // total number of pages of books with between 0 and 500 pages
-Console.WriteLine($"The total sum of all books with between 0 and 500 pages is: {queries.totalNumberOfPagesOfBooksWithBetween0And500Pages()}");
+// Console.WriteLine($"The total sum of all books with between 0 and 500 pages is: {queries.totalNumberOfPagesOfBooksWithBetween0And500Pages()}");
+
+// Books published after 2015
+// Console.WriteLine(queries.booksTitlesAfter2015());
 
 void printValues(IEnumerable<Book> booksList)
 {
