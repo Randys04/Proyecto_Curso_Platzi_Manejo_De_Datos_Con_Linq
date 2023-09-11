@@ -2,6 +2,8 @@
 
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
+using static System.Reflection.Metadata.BlobBuilder;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public class LinqQueries
 {
@@ -104,10 +106,15 @@ public class LinqQueries
     {
         return booksCollection.Where(book => book.PageCount > 0).MinBy(book => book.PageCount);
     }
-
     public Book mostRecentBook()
     {
         return booksCollection.MaxBy(book => book.PublishedDate);
+    }
+
+    public int totalNumberOfPagesOfBooksWithBetween0And500Pages ()
+    {
+        return booksCollection.Where(book => book.PageCount >= 0 && book.PageCount <= 500)
+            .Sum(book => book.PageCount);
     }
 }
 

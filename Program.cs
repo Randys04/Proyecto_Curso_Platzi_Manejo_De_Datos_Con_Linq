@@ -50,9 +50,12 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"{bookMinPages.Title} - {bookMinPages.PublishedDate.ToString("d")} - {bookMinPages.PageCount}");
 
 // Most recently published book
-var recentBook = queries.mostRecentBook();
-Console.WriteLine($"{recentBook.Title} - {recentBook.PublishedDate} - {recentBook.PageCount}");
- 
+// var recentBook = queries.mostRecentBook();
+// Console.WriteLine($"{recentBook.Title} - {recentBook.PublishedDate} - {recentBook.PageCount}");
+
+// total number of pages of books with between 0 and 500 pages
+Console.WriteLine($"The total sum of all books with between 0 and 500 pages is: {queries.totalNumberOfPagesOfBooksWithBetween0And500Pages()}");
+
 void printValues(IEnumerable<Book> booksList)
 {
     Console.WriteLine("{0,-70} {1,7} {2,11}\n", "Title", "Pages", "Published date" );
