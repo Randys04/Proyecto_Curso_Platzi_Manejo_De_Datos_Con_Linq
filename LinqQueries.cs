@@ -145,5 +145,11 @@ public class LinqQueries
     {
         return booksCollection.Where(book => book.PublishedDate.Year >= 2000).GroupBy(book => book.PublishedDate.Year);
     }
+
+    public ILookup<char, Book> booksDictionaryByLetter()
+    {
+        return booksCollection.ToLookup(book => book.Title[0], book => book);
+    }
+
 }
 

@@ -63,8 +63,11 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"The average number of characters in titles is: {queries.averageNumberOfCharactersInTitles()}");
 
 // Books published after 2000 group by year
-printGroups(queries.booksAfter2000GroupByYear());
+// printGroups(queries.booksAfter2000GroupByYear());
 
+// Books dictionary by their first letter on their titles
+var dictionaryLookUp = queries.booksDictionaryByLetter();
+printDictionary(dictionaryLookUp, 'S');
 
 void printValues(IEnumerable<Book> booksList)
 {
@@ -86,5 +89,14 @@ void printGroups(IEnumerable<IGrouping<int, Book>> BooksList)
         {
             Console.WriteLine("{0,-60} {1, 15} {2, 15}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
         }
+    }
+}
+
+void printDictionary(ILookup<char, Book> booksList, char letra)
+{
+    Console.WriteLine("{0,-60} {1, 15} {2, 15}\n", "Title", "N. Pages", "Published Date");
+    foreach (var item in booksList[letra])
+    {
+        Console.WriteLine("{0,-60} {1, 15} {2, 15}", item.Title, item.PageCount, item.PublishedDate.Date.ToShortDateString());
     }
 }
