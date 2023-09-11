@@ -59,6 +59,9 @@ LinqQueries queries = new LinqQueries();
 // Books published after 2015
 // Console.WriteLine(queries.booksTitlesAfter2015());
 
+// Average number of characters in titles 
+Console.WriteLine($"The average number of characters in titles is: {queries.averageNumberOfCharactersInTitles()}");
+
 void printValues(IEnumerable<Book> booksList)
 {
     Console.WriteLine("{0,-70} {1,7} {2,11}\n", "Title", "Pages", "Published date" );

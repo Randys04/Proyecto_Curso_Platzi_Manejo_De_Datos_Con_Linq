@@ -132,7 +132,13 @@ public class LinqQueries
                 }
 
                 return Titles;
-            });
+            }
+            );
+    }
+
+    public double averageNumberOfCharactersInTitles ()
+    {
+        return booksCollection.Average(book => book.Title.Length);
     }
 }
 
