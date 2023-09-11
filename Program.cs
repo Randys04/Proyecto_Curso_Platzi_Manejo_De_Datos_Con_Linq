@@ -46,11 +46,13 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"Total number of pages of the book with the most pages is: {queries.biggestNumberOfPagesOfABook()}");
 
 // Book with the least number of pages
-var bookMinPages = queries.bookWithTheLeastNumberOfPages();
-Console.WriteLine($"{bookMinPages.Title} - {bookMinPages.PublishedDate.ToString("d")} - {bookMinPages.PageCount}");
+// var bookMinPages = queries.bookWithTheLeastNumberOfPages();
+// Console.WriteLine($"{bookMinPages.Title} - {bookMinPages.PublishedDate.ToString("d")} - {bookMinPages.PageCount}");
 
-
-
+// Most recently published book
+var recentBook = queries.mostRecentBook();
+Console.WriteLine($"{recentBook.Title} - {recentBook.PublishedDate} - {recentBook.PageCount}");
+ 
 void printValues(IEnumerable<Book> booksList)
 {
     Console.WriteLine("{0,-70} {1,7} {2,11}\n", "Title", "Pages", "Published date" );

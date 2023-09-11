@@ -104,5 +104,10 @@ public class LinqQueries
     {
         return booksCollection.Where(book => book.PageCount > 0).MinBy(book => book.PageCount);
     }
+
+    public Book mostRecentBook()
+    {
+        return booksCollection.MaxBy(book => book.PublishedDate);
+    }
 }
 
