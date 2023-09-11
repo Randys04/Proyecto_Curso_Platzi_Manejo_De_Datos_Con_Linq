@@ -43,7 +43,13 @@ LinqQueries queries = new LinqQueries();
 // Console.WriteLine($"The most lower published date of a book is: {queries.minPublishedDateBook()}");
 
 // Number of pages of the book with more pages
-Console.WriteLine($"Total number of pages of the book with the most pages is: {queries.biggestNumberOfPagesOfABook()}");
+// Console.WriteLine($"Total number of pages of the book with the most pages is: {queries.biggestNumberOfPagesOfABook()}");
+
+// Book with the least number of pages
+var bookMinPages = queries.bookWithTheLeastNumberOfPages();
+Console.WriteLine($"{bookMinPages.Title} - {bookMinPages.PublishedDate.ToString("d")} - {bookMinPages.PageCount}");
+
+
 
 void printValues(IEnumerable<Book> booksList)
 {

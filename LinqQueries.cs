@@ -1,5 +1,6 @@
 ﻿
 
+using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 
 public class LinqQueries
@@ -99,5 +100,9 @@ public class LinqQueries
         return booksCollection.Max(book => book.PageCount);
     }
 
+    public Book bookWithTheLeastNumberOfPages()
+    {
+        return booksCollection.Where(book => book.PageCount > 0).MinBy(book => book.PageCount);
+    }
 }
 
