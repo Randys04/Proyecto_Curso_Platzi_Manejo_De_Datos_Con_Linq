@@ -151,5 +151,14 @@ public class LinqQueries
         return booksCollection.ToLookup(book => book.Title[0], book => book);
     }
 
+    public IEnumerable<Book> booksAfter2005WithMoreThan500Pages()
+    {
+        var booksAfter2005 = booksCollection.Where(book => book.PublishedDate.Year > 2005);
+        var booksMore500pages = booksCollection.Where(book => book.PageCount > 500);
+
+        return booksAfter2005
+            .Join(booksMore500pages, bookX => bookX.Title, bookY => bookY.Title, (bookX, bookY) => bookX);
+    }
+
 }
 

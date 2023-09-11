@@ -66,8 +66,11 @@ LinqQueries queries = new LinqQueries();
 // printGroups(queries.booksAfter2000GroupByYear());
 
 // Books dictionary by their first letter on their titles
-var dictionaryLookUp = queries.booksDictionaryByLetter();
-printDictionary(dictionaryLookUp, 'S');
+// var dictionaryLookUp = queries.booksDictionaryByLetter();
+// printDictionary(dictionaryLookUp, 'S');
+
+// Books after 2005 wuth more than 500 pages. Filter with Join
+printValues(queries.booksAfter2005WithMoreThan500Pages());
 
 void printValues(IEnumerable<Book> booksList)
 {
