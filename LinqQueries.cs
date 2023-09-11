@@ -89,6 +89,10 @@ public class LinqQueries
         return booksCollection.Count(book => book.PageCount >= 200 && book.PageCount <= 500);
     }
 
+    public DateTime minPublishedDateBook()
+    {
+        return booksCollection.Min(book => book.PublishedDate);
+    }
 
 }
 

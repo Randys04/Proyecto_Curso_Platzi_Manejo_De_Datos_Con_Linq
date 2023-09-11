@@ -37,8 +37,10 @@ LinqQueries queries = new LinqQueries();
 // printValues(queries.firstThreeBooksFromCollection());
 
 // Total number of books with between 200 and 500 pages
-Console.WriteLine($"Total number of books with between 200 and 500 pages: {queries.totalBooksBetween200And500Pages()}");
+// Console.WriteLine($"Total number of books with between 200 and 500 pages: {queries.totalBooksBetween200And500Pages()}");
 
+// The most lower published date of a book
+Console.WriteLine($"The most lower published date of a book is: {queries.minPublishedDateBook()}");
 
 void printValues(IEnumerable<Book> booksList)
 {
